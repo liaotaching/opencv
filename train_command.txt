@@ -1,0 +1,2 @@
+opencv_createsamples -info pos.txt -num 218 -w 11 -h 55 -vec pos.vec
+opencv_traincascade -data model -vec pos.vec -bg neg.txt -numPos 218 -numNeg 375 -numStages 30 -w 11 -h 55 -featureType HAAR -numThreads 12
